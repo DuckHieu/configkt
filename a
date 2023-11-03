@@ -1,0 +1,104 @@
+shared.Configs = {
+    Threading = {
+        ["Level"] = true,
+        ["Selected Weapons"] = "Equip Best", -- "Equip Best", "Sword", "Melee"
+        ["Main"] = {
+            ["Pole"] = true,
+            ["Saber"] = true,
+            ["Player Hunter Quest"] = true,
+            ["Dressrosa Quest"] = true,
+        },
+        ["Dressrosa"] = {
+            ["Water Key"] = true,
+            ["Library Key"] = true,
+            ["Dark Fragment"] = true,
+            ["Factory"] = true,
+            ["Bartilo Quest"] = true,
+            ["Flower Quest"] = true,
+            ['Race V3 Quest'] = true,
+            ["Zou Quest"] = true,
+        },
+        ["Zou"] = {
+            ["Spikey Trident"] = true,
+            ["Hallow Scythe"] = true,
+            ["Buddy Sword"] = true,
+            ["Mirror Fractal"] = true,
+            ["Pirate Raid"] = true,
+            ["Pull Leaver"] = true,
+            ['Rainbow Haki'] = true,
+            ["Canvander"] = true,
+            ["Tushita"] = true,
+            ["Dark Dagger"] = true,
+            ["Yama"] = true,
+            ["Cursed Dual Katana"] = true,
+            ["Soul Guitar"] = true,
+            ["Shark Anchor (WIP)"] = true,
+        },
+    },
+    LocalPlayer = {
+        ["Team"] = "Pirates", -- Marines / Pirates
+        ["Raid"] = {
+            ["Enabled"] = true, -- Enable Normal Raid
+            ["Awaken"] = true, -- When Enabled its only Awaken when you already got godhuman
+            ["Join Others"] = {
+                ["Enabled"] = true,
+                ["Until Fragment"] = 50000,
+            },
+        },
+        ["Codes"] = {
+            ["Enabled"] = true,
+            ["Redeem Level"] = 1,
+        },
+        ["FPS"] = {
+            ["Enabled"] = true,
+            ["Limit"] = 70,
+        },
+        ["White Screen"] = true,
+        ["Disabled Notifications"] = true,
+        ["Close UI"] = true,
+    },
+    Stats = {
+        ["Enabled"] = true,
+        ["Melee"] = 2550,
+        ["Defense"] = 2550,
+        ["Sword"] = 0,
+        ["Blox Fruit"] = 2550,
+    },
+    DevilFruit = {
+        ["Store Fruit"] = true,
+        ["Random Fruit"] = true,
+        ["Sniper"] = {
+            ["Enabled"] = true,
+            ["Buy Fruit"] = {
+                "Dough-Dough",
+                "Light-Light",
+                "Quake-Quake",
+                "Ice-Ice",
+                "Dark-Dark",
+                "Light-Light",
+            },
+        },
+    },
+    FightingStyles = {
+        ["Required 3 Melee Before Zou"] = true,
+        ["Required V3 Evolved Before Zou"] = true,
+        ["Enabled"] = true, -- everyone want godhuman so why not 
+    },
+    ["Fragments/Beli"] = {
+        ["Kabucha"] = true, -- only buy it when you have godhuman
+        ["Soul Guitar"] = true, -- only buy it when you have godhuman
+        ["Buy Legendary Sword"] = true,
+        ["Enchancement"] = {
+            ["Enabled"] = true,
+            ["Buy Color"] = {
+                "Snow White",
+                "Pure Red",
+                "Winter Sky",
+            },
+        },
+        ["Buy Bones"] = true,
+        ["Buy Common"] = true,
+        ["Buy Pole V2"] = true,
+    },
+}
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Xenon-Trash/Loader/main/Loader.lua')){196015090236}

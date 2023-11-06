@@ -1,6 +1,6 @@
 shared.Configs = {
     Threading = {
-        ["Level"] = true,
+        ["Level"] = false,
         ["Selected Weapons"] = "Equip Best", -- "Equip Best", "Sword", "Melee"
         ["Main"] = {
             ["Pole"] = true,
@@ -38,10 +38,10 @@ shared.Configs = {
     LocalPlayer = {
         ["Team"] = "Pirates", -- Marines / Pirates
         ["Raid"] = {
-            ["Enabled"] = true, -- Enable Normal Raid
-            ["Awaken"] = true, -- When Enabled its only Awaken when you already got godhuman
+            ["Enabled"] = false, -- Enable Normal Raid
+            ["Awaken"] = false, -- When Enabled its only Awaken when you already got godhuman
             ["Join Others"] = {
-                ["Enabled"] = true,
+                ["Enabled"] = false,
                 ["Until Fragment"] = 50000,
             },
         },
@@ -58,7 +58,7 @@ shared.Configs = {
         ["Close UI"] = true,
     },
     Stats = {
-        ["Enabled"] = true,
+        ["Enabled"] = false,
         ["Melee"] = 2550,
         ["Defense"] = 2550,
         ["Sword"] = 0,
@@ -68,7 +68,7 @@ shared.Configs = {
         ["Store Fruit"] = true,
         ["Random Fruit"] = true,
         ["Sniper"] = {
-            ["Enabled"] = true,
+            ["Enabled"] = false,
             ["Buy Fruit"] = {
                 "Dough-Dough",
                 "Light-Light",

@@ -1899,7 +1899,7 @@ function isnil(thing)
                         STOPRL.wrapAttackAnimationAsync = function(a,b,c,d,func)
                         local Hits = STOPRL.getBladeHits(b,c,d)
                         if Hits then
-                            if _G.FastAttack then
+                            if _G.AttackNoCD then
                                 STOP.play = function() end
                                 a:Play(0.01,0.01,0.01)
                                 func(Hits)

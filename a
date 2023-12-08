@@ -2005,7 +2005,7 @@ end
 
 spawn(function()
     while wait() do
-        if _G.AutoDoughtBoss or _G.Auto_DungeonMobAura or _G.AutoFarmChest or _G.AutoFarmBossHallow or _G.AutoFactory or _G.AutoFarmSwanGlasses or _G.AutoLongSword or _G.AutoBlackSpikeycoat or _G.AutoElectricClaw or _G.AutoFarmGunMastery or _G.AutoHolyTorch or _G.AutoLawRaid or _G.AutoFarmBoss or _G.AutoTwinHooks or _G.AutoOpenSwanDoor or _G.AutoDragon_Trident or _G.AutoSaber or _G.NOCLIP or _G.AutoFarmFruitMastery or _G.AutoFarmGunMastery or _G.TeleportIsland or _G.Auto_EvoRace or _G.AutoFarmAllMsBypassType or _G.AutoObservationv2 or _G.AutoMusketeerHat or _G.AutoEctoplasm or _G.AutoRengoku or _G.Auto_Rainbow_Haki or _G.AutoObservation or _G.AutoDarkDagger or _G.Safe_Mode or _G.MasteryFruit or _G.AutoBudySword or _G.AutoOderSword or _G.AutoAllBoss or _G.Auto_Bounty or _G.AutoSharkman or _G.Auto_Mastery_Fruit or _G.Auto_Mastery_Gun or _G.Auto_Dungeon or _G.Auto_Cavender or _G.Auto_Pole or _G.Auto_Kill_Ply or _G.Auto_Factory or _G.AutoSecondSea or _G.TeleportPly or _G.AutoBartilo or _G.Auto_DarkBoss or _G.AutoFarm or _G.Clip or _G.AutoElitehunter or _G.AutoThirdSea or _G.Auto_Bone or _G.Autoheart or _G.Autodoughking or _G.d or _G.Autowaden or _G.Autogay or _G.AutoObservationHakiV2 or _G.AutoFarmMaterial or _G.AutoFarmNearest or _G.AutoCarvender or _G.AutoTwinHook or AutoMobAura or _G.Leather or _G.Auto_Wing or _G.Umm or _G.Makori_gay or Radioactive or Fish or Gunpowder or Dragon_Scale or Cocoafarm or Scrap or MiniHee or _G.AutoFarmSeabaest or Auto_Cursed_Dual_Katana or _G.AutoFarmMob or _G.AutoRaidPirate or getgenv().AutoFarm or _G.AutoPlayerHunter or _G.AutoFactory or _G._G.AttackNoCDDummy or _G.AutoSwordMastery or _G.Auto_Seabest or _G.AutoSeaBest or _G.AutoKillTial or _G.Auto_Saber or _G.Farmfast or _G.RaidPirate == true then
+        if _G.AutoDoughtBoss or _G.Auto_DungeonMobAura or _G.AutoFarmChest or _G.AutoFarmBossHallow or _G.AutoFactory or _G.AutoFarmSwanGlasses or _G.AutoLongSword or _G.AutoBlackSpikeycoat or _G.AutoElectricClaw or _G.AutoFarmGunMastery or _G.AutoHolyTorch or _G.AutoLawRaid or _G.AutoFarmBoss or _G.AutoTwinHooks or _G.AutoOpenSwanDoor or _G.AutoDragon_Trident or _G.AutoSaber or _G.NOCLIP or _G.AutoFarmFruitMastery or _G.AutoFarmGunMastery or _G.TeleportIsland or _G.Auto_EvoRace or _G.AutoFarmAllMsBypassType or _G.AutoObservationv2 or _G.AutoMusketeerHat or _G.AutoEctoplasm or _G.AutoRengoku or _G.Auto_Rainbow_Haki or _G.AutoObservation or _G.AutoDarkDagger or _G.Safe_Mode or _G.MasteryFruit or _G.AutoBudySword or _G.AutoOderSword or _G.AutoAllBoss or _G.Auto_Bounty or _G.AutoSharkman or _G.Auto_Mastery_Fruit or _G.Auto_Mastery_Gun or _G.Auto_Dungeon or _G.Auto_Cavender or _G.Auto_Pole or _G.Auto_Kill_Ply or _G.Auto_Factory or _G.AutoSecondSea or _G.TeleportPly or _G.AutoBartilo or _G.Auto_DarkBoss or _G.AutoFarm or _G.Clip or _G.AutoElitehunter or _G.AutoThirdSea or _G.Auto_Bone or _G.Autoheart or _G.Autodoughking or _G.d or _G.Autowaden or _G.Autogay or _G.AutoObservationHakiV2 or _G.AutoFarmMaterial or _G.AutoFarmNearest or _G.AutoCarvender or _G.AutoTwinHook or AutoMobAura or _G.Leather or _G.Auto_Wing or _G.Umm or _G.Makori_gay or Radioactive or Fish or Gunpowder or Dragon_Scale or Cocoafarm or Scrap or MiniHee or _G.AutoFarmSeabaest or Auto_Cursed_Dual_Katana or _G.AutoFarmMob or _G.AutoRaidPirate or getgenv().AutoFarm or _G.AutoPlayerHunter or _G.AutoFactory or _G.AttackDummy or _G.AutoSwordMastery or _G.Auto_Seabest or _G.AutoSeaBest or _G.AutoKillTial or _G.Auto_Saber or _G.Farmfast or _G.RaidPirate == true then
             pcall(function()
                 game:GetService("ReplicatedStorage").Remotes.CommE:FireServer("Ken",true)
             end)
@@ -2015,7 +2015,7 @@ end)
 
 spawn(function()
 game:GetService("RunService").RenderStepped:Connect(function()
-    if _G.AutoClick or Fast_G.AttackNoCD then
+    if _G.AutoClick or Fastattack then
          pcall(function()
             game:GetService'VirtualUser':CaptureController()
             game:GetService'VirtualUser':Button1Down(Vector2.new(0,1,0,1))
@@ -2290,12 +2290,12 @@ function TweenTempleLegit()
     spawn(function()
         while task.wait() do
             pcall(function()
-                if not shared.orl then shared.orl = STOPRL.wrap_G.AttackNoCDAnimationAsync end
+                if not shared.orl then shared.orl = STOPRL.wrapAttackAnimationAsync end
                 if not shared.cpc then shared.cpc = STOP.play end
-                    STOPRL.wrap_G.AttackNoCDAnimationAsync = function(a,b,c,d,func)
+                    STOPRL.wrapAttackAnimationAsync = function(a,b,c,d,func)
                     local Hits = STOPRL.getBladeHits(b,c,d)
                     if Hits then
-                        if _G._G.AttackNoCDNoCD then
+                        if _G.FastAttack then
                             STOP.play = function() end
                             a:Play(0.01,0.01,0.01)
                             func(Hits)
@@ -2311,77 +2311,90 @@ function TweenTempleLegit()
         end
     end)
 
-    local SuperFastMode = true -- Change to true if you want Super Super Super Fast _G.AttackNoCD (Like instant kill) but it will make the game kick you more than normal mode
-
-
-    local plr = game.Players.LocalPlayer
-    
-    local CbFw = debug.getupvalues(require(plr.PlayerScripts.CombatFramework))
-    local CbFw2 = CbFw[2]
-    
-    function GetCurrentBlade() 
-        local p13 = CbFw2.activeController
-        local ret = p13.blades[1]
-        if not ret then return end
-        while ret.Parent~=game.Players.LocalPlayer.Character do ret=ret.Parent end
-        return ret
+function GetBladeHit()
+    local CombatFrameworkLib = debug.getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework))
+    local CmrFwLib = CombatFrameworkLib[2]
+    local p13 = CmrFwLib.activeController
+    local weapon = p13.blades[1]
+    if not weapon then 
+        return weapon
     end
-    function _G.AttackNoCDNoCD() 
-        local AC = CbFw2.activeController
-        for i = 1, 1 do 
-            local bladehit = require(game.ReplicatedStorage.CombatFramework.RigLib).getBladeHits(
-                plr.Character,
-                {plr.Character.HumanoidRootPart},
-                60
-            )
-            local cac = {}
-            local hash = {}
-            for k, v in pairs(bladehit) do
-                if v.Parent:FindFirstChild("HumanoidRootPart") and not hash[v.Parent] then
-                    table.insert(cac, v.Parent.HumanoidRootPart)
-                    hash[v.Parent] = true
-                end
+    while weapon.Parent ~= game.Players.LocalPlayer.Character do
+        weapon = weapon.Parent 
+    end
+    return weapon
+end
+local SuperFastMode = true -- Change to true if you want Super Super Super Fast attack (Like instant kill) but it will make the game kick you more than normal mode
+
+
+local plr = game.Players.LocalPlayer
+
+local CbFw = debug.getupvalues(require(plr.PlayerScripts.CombatFramework))
+local CbFw2 = CbFw[2]
+
+function GetCurrentBlade() 
+    local p13 = CbFw2.activeController
+    local ret = p13.blades[1]
+    if not ret then return end
+    while ret.Parent~=game.Players.LocalPlayer.Character do ret=ret.Parent end
+    return ret
+end
+function AttackNoCD() 
+    local AC = CbFw2.activeController
+    for i = 1, 1 do 
+        local bladehit = require(game.ReplicatedStorage.CombatFramework.RigLib).getBladeHits(
+            plr.Character,
+            {plr.Character.HumanoidRootPart},
+            60
+        )
+        local cac = {}
+        local hash = {}
+        for k, v in pairs(bladehit) do
+            if v.Parent:FindFirstChild("HumanoidRootPart") and not hash[v.Parent] then
+                table.insert(cac, v.Parent.HumanoidRootPart)
+                hash[v.Parent] = true
             end
-            bladehit = cac
-            if #bladehit > 0 then
-                local u8 = debug.getupvalue(AC._G.AttackNoCD, 5)
-                local u9 = debug.getupvalue(AC._G.AttackNoCD, 6)
-                local u7 = debug.getupvalue(AC._G.AttackNoCD, 4)
-                local u10 = debug.getupvalue(AC._G.AttackNoCD, 7)
-                local u12 = (u8 * 798405 + u7 * 727595) % u9
-                local u13 = u7 * 798405
-                (function()
-                    u12 = (u12 * u9 + u13) % 1099511627776
-                    u8 = math.floor(u12 / u9)
-                    u7 = u12 - u8 * u9
-                end)()
-                u10 = u10 + 1
-                debug.setupvalue(AC._G.AttackNoCD, 5, u8)
-                debug.setupvalue(AC._G.AttackNoCD, 6, u9)
-                debug.setupvalue(AC._G.AttackNoCD, 4, u7)
-                debug.setupvalue(AC._G.AttackNoCD, 7, u10)
-                pcall(function()
-                    for k, v in pairs(AC.animator.anims.basic) do
-                        v:Play()
-                    end
-                end)
-                if plr.Character:FindFirstChildOfClass("Tool") and AC.blades and AC.blades[1] then 
-                    game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("weaponChange",tostring(GetCurrentBlade()))
-                    game.ReplicatedStorage.Remotes.Validator:FireServer(math.floor(u12 / 1099511627776 * 16777215), u10)
-                    game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("hit", bladehit, i, "") 
+        end
+        bladehit = cac
+        if #bladehit > 0 then
+            local u8 = debug.getupvalue(AC.attack, 5)
+            local u9 = debug.getupvalue(AC.attack, 6)
+            local u7 = debug.getupvalue(AC.attack, 4)
+            local u10 = debug.getupvalue(AC.attack, 7)
+            local u12 = (u8 * 798405 + u7 * 727595) % u9
+            local u13 = u7 * 798405
+            (function()
+                u12 = (u12 * u9 + u13) % 1099511627776
+                u8 = math.floor(u12 / u9)
+                u7 = u12 - u8 * u9
+            end)()
+            u10 = u10 + 1
+            debug.setupvalue(AC.attack, 5, u8)
+            debug.setupvalue(AC.attack, 6, u9)
+            debug.setupvalue(AC.attack, 4, u7)
+            debug.setupvalue(AC.attack, 7, u10)
+            pcall(function()
+                for k, v in pairs(AC.animator.anims.basic) do
+                    v:Play()
                 end
+            end)
+            if plr.Character:FindFirstChildOfClass("Tool") and AC.blades and AC.blades[1] then 
+                game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("weaponChange",tostring(GetCurrentBlade()))
+                game.ReplicatedStorage.Remotes.Validator:FireServer(math.floor(u12 / 1099511627776 * 16777215), u10)
+                game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("hit", bladehit, i, "") 
             end
         end
     end
-    local cac
-    if SuperFastMode then 
-        cac=task.wait
-    else
-        cac=wait
-    end
-    while cac() do 
-        _G.AttackNoCDNoCD()
-    end
+end
+local cac
+if SuperFastMode then 
+    cac=task.wait
+else
+    cac=wait
+end
+while cac() do 
+    AttackNoCD()
+end
 
 local CamShake = require(game.ReplicatedStorage.Util.CameraShaker)
 CamShake:Stop()
@@ -3211,16 +3224,16 @@ spawn(function()
 end)
 
 local Section = M:AddSection({
-    Name = "Fast_G.AttackNoCD :"
+    Name = "FastAttack :"
 })
 
 M:AddToggle({
-    Name = "Fast_G.AttackNoCD",
+    Name = "FastAttack",
     Default = true,
-    Flag = "Fast_G.AttackNoCD",
+    Flag = "FastAttack",
     Save = false,
     Callback = function(Value)
-        _G._G.AttackNoCDNoCD = Value
+        _G.FastAttack = Value
     end    
 })
 local CameraShaker = require(game.ReplicatedStorage.Util.CameraShaker)
@@ -3228,19 +3241,19 @@ CombatFrameworkR = require(game:GetService("Players").LocalPlayer.PlayerScripts.
 y = debug.getupvalues(CombatFrameworkR)[2]
 spawn(function()
     game:GetService("RunService").RenderStepped:Connect(function()
-        if _G._G.AttackNoCDNoCD then
+        if _G.FastAttack then
             if typeof(y) == "table" then
                 pcall(function()
                     CameraShaker:Stop()
-                    y.activeController.timeToNext_G.AttackNoCD = (math.huge^math.huge^math.huge)
-                    y.activeController.timeToNext_G.AttackNoCD = 0
+                    y.activeController.timeToNextAttack = (math.huge^math.huge^math.huge)
+                    y.activeController.timeToNextAttack = 0
                     y.activeController.hitboxMagnitude = 60
                     y.activeController.active = false
                     y.activeController.timeToNextBlock = 0
                     y.activeController.focusStart = 1655503339.0980349
                     y.activeController.increment = 1
                     y.activeController.blocking = false
-                    y.activeController._G.AttackNoCDing = false
+                    y.activeController.attacking = false
                     y.activeController.humanoid.AutoRotate = true
                 end)
             end
@@ -3249,68 +3262,68 @@ spawn(function()
 end)
 spawn(function()
     game:GetService("RunService").RenderStepped:Connect(function()
-        if _G._G.AttackNoCDNoCD == true then
+        if _G.FastAttack == true then
             game.Players.LocalPlayer.Character.Stun.Value = 0
             game.Players.LocalPlayer.Character.Busy.Value = false        
         end
     end)
 end)
 
-local _G.AttackNoCDList = {"0", "0.1", "0.175", "0.2", "0.25", "0.3", "0.35", "0.4", "0.45", "0.5", "0.55", "0.6", "0.65", "0.7", "0.75", "0.8", "0.85", "0.9", "0.95", "0.1"}
+local AttackList = {"0", "0.1", "0.175", "0.2", "0.25", "0.3", "0.35", "0.4", "0.45", "0.5", "0.55", "0.6", "0.65", "0.7", "0.75", "0.8", "0.85", "0.9", "0.95", "0.1"}
 M:AddDropdown({
-	Name = "Fast_G.AttackNoCD Delay",
+	Name = "FastAttack Delay",
 	Default = "0.5",
-	Options = _G.AttackNoCDList,
-    Flag = "Fast_G.AttackNoCD Delay",
+	Options = AttackList,
+    Flag = "FastAttack Delay",
     Save = true,
 	Callback = function(Value)
-		_G._G.AttackNoCDNoCDDelay = Value
+		_G.FastAttackDelay = Value
 	end    
 })
 spawn(function()
     while wait(.1) do
-        if _G._G.AttackNoCDNoCDDelay then
+        if _G.FastAttackDelay then
             pcall(function()
-                if _G._G.AttackNoCDNoCDDelay == "0" then
-                    _G._G.AttackNoCDNoCDDelay = 0
-                elseif _G._G.AttackNoCDNoCDDelay == "0.1" then
-                    _G._G.AttackNoCDNoCDDelay = 0.1
-                elseif _G._G.AttackNoCDNoCDDelay == "0.175" then
-                    _G._G.AttackNoCDNoCDDelay = 0.175
-                elseif _G._G.AttackNoCDNoCDDelay == "0.2" then
-                    _G._G.AttackNoCDNoCDDelay = 0.2
-                elseif _G._G.AttackNoCDNoCDDelay == "0.25" then
-                    _G._G.AttackNoCDNoCDDelay = 0.25
-                elseif _G._G.AttackNoCDNoCDDelay == "0.3" then
-                    _G._G.AttackNoCDNoCDDelay = 0.3
-                elseif _G._G.AttackNoCDNoCDDelay == "0.35" then
-                    _G._G.AttackNoCDNoCDDelay = 0.35
-                elseif _G._G.AttackNoCDNoCDDelay == "0.4" then
-                    _G._G.AttackNoCDNoCDDelay = 0.5
-                elseif _G._G.AttackNoCDNoCDDelay == "0.45" then
-                    _G._G.AttackNoCDNoCDDelay = 0.45
-                elseif _G._G.AttackNoCDNoCDDelay == "0.5" then
-                    _G._G.AttackNoCDNoCDDelay = 0.5
-                elseif _G._G.AttackNoCDNoCDDelay == "0.55" then
-                    _G._G.AttackNoCDNoCDDelay = 0.55
-                elseif _G._G.AttackNoCDNoCDDelay == "0.6" then
-                    _G._G.AttackNoCDNoCDDelay = 0.6
-                elseif _G._G.AttackNoCDNoCDDelay == "0.65" then
-                    _G._G.AttackNoCDNoCDDelay = 0.65
-                elseif _G._G.AttackNoCDNoCDDelay == "0.7" then
-                    _G._G.AttackNoCDNoCDDelay = 0.7
-                elseif _G._G.AttackNoCDNoCDDelay == "0.75" then
-                    _G._G.AttackNoCDNoCDDelay = 0.75
-                elseif _G._G.AttackNoCDNoCDDelay == "0.8" then
-                    _G._G.AttackNoCDNoCDDelay = 0.8
-                elseif _G._G.AttackNoCDNoCDDelay == "0.85" then
-                    _G._G.AttackNoCDNoCDDelay = 0.85
-                elseif _G._G.AttackNoCDNoCDDelay == "0.9" then
-                    _G._G.AttackNoCDNoCDDelay = 0.9
-                elseif _G._G.AttackNoCDNoCDDelay == "0.95" then
-                    _G._G.AttackNoCDNoCDDelay = 0.95
-                elseif _G._G.AttackNoCDNoCDDelay == "1" then
-                    _G._G.AttackNoCDNoCDDelay = 1
+                if _G.FastAttackDelay == "0" then
+                    _G.FastAttackDelay = 0
+                elseif _G.FastAttackDelay == "0.1" then
+                    _G.FastAttackDelay = 0.1
+                elseif _G.FastAttackDelay == "0.175" then
+                    _G.FastAttackDelay = 0.175
+                elseif _G.FastAttackDelay == "0.2" then
+                    _G.FastAttackDelay = 0.2
+                elseif _G.FastAttackDelay == "0.25" then
+                    _G.FastAttackDelay = 0.25
+                elseif _G.FastAttackDelay == "0.3" then
+                    _G.FastAttackDelay = 0.3
+                elseif _G.FastAttackDelay == "0.35" then
+                    _G.FastAttackDelay = 0.35
+                elseif _G.FastAttackDelay == "0.4" then
+                    _G.FastAttackDelay = 0.5
+                elseif _G.FastAttackDelay == "0.45" then
+                    _G.FastAttackDelay = 0.45
+                elseif _G.FastAttackDelay == "0.5" then
+                    _G.FastAttackDelay = 0.5
+                elseif _G.FastAttackDelay == "0.55" then
+                    _G.FastAttackDelay = 0.55
+                elseif _G.FastAttackDelay == "0.6" then
+                    _G.FastAttackDelay = 0.6
+                elseif _G.FastAttackDelay == "0.65" then
+                    _G.FastAttackDelay = 0.65
+                elseif _G.FastAttackDelay == "0.7" then
+                    _G.FastAttackDelay = 0.7
+                elseif _G.FastAttackDelay == "0.75" then
+                    _G.FastAttackDelay = 0.75
+                elseif _G.FastAttackDelay == "0.8" then
+                    _G.FastAttackDelay = 0.8
+                elseif _G.FastAttackDelay == "0.85" then
+                    _G.FastAttackDelay = 0.85
+                elseif _G.FastAttackDelay == "0.9" then
+                    _G.FastAttackDelay = 0.9
+                elseif _G.FastAttackDelay == "0.95" then
+                    _G.FastAttackDelay = 0.95
+                elseif _G.FastAttackDelay == "1" then
+                    _G.FastAttackDelay = 1
                 end
             end)
         end
@@ -3410,7 +3423,7 @@ M:AddToggle({
 
 spawn(function()
     game:GetService("RunService").RenderStepped:Connect(function()
-        if _G.AutoClick or Fast_G.AttackNoCD then
+        if _G.AutoClick or Fastattack then
              pcall(function()
                 game:GetService'VirtualUser':CaptureController()
                 game:GetService'VirtualUser':Button1Down(Vector2.new(0,1,0,1))
@@ -7572,25 +7585,29 @@ spawn(function()
     end
 end)
 
-function GetBladeHit()
-    local CombatFrameworkLib = debug.getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework))
-    local CmrFwLib = CombatFrameworkLib[2]
-    local p13 = CmrFwLib.activeController
-    local weapon = p13.blades[1]
-    if not weapon then 
-        return weapon
-    end
-    while weapon.Parent ~= game.Players.LocalPlayer.Character do
-        weapon = weapon.Parent 
-    end
-    return weapon
+local SuperFastMode = true -- Change to true if you want Super Super Super Fast attack (Like instant kill) but it will make the game kick you more than normal mode
+
+
+local plr = game.Players.LocalPlayer
+
+local CbFw = debug.getupvalues(require(plr.PlayerScripts.CombatFramework))
+local CbFw2 = CbFw[2]
+
+function GetCurrentBlade() 
+    local p13 = CbFw2.activeController
+    local ret = p13.blades[1]
+    if not ret then return end
+    while ret.Parent~=game.Players.LocalPlayer.Character do ret=ret.Parent end
+    return ret
 end
-function _G.AttackNoCDHit()
-    local CombatFrameworkLib = debug.getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework))
-    local CmrFwLib = CombatFrameworkLib[2]
-    local plr = game.Players.LocalPlayer
-    for i = 1, 1 do
-        local bladehit = require(game.ReplicatedStorage.CombatFramework.RigLib).getBladeHits(plr.Character,{plr.Character.HumanoidRootPart},60)
+function AttackNoCD() 
+    local AC = CbFw2.activeController
+    for i = 1, 1 do 
+        local bladehit = require(game.ReplicatedStorage.CombatFramework.RigLib).getBladeHits(
+            plr.Character,
+            {plr.Character.HumanoidRootPart},
+            60
+        )
         local cac = {}
         local hash = {}
         for k, v in pairs(bladehit) do
@@ -7601,31 +7618,44 @@ function _G.AttackNoCDHit()
         end
         bladehit = cac
         if #bladehit > 0 then
+            local u8 = debug.getupvalue(AC.attack, 5)
+            local u9 = debug.getupvalue(AC.attack, 6)
+            local u7 = debug.getupvalue(AC.attack, 4)
+            local u10 = debug.getupvalue(AC.attack, 7)
+            local u12 = (u8 * 798405 + u7 * 727595) % u9
+            local u13 = u7 * 798405
+            (function()
+                u12 = (u12 * u9 + u13) % 1099511627776
+                u8 = math.floor(u12 / u9)
+                u7 = u12 - u8 * u9
+            end)()
+            u10 = u10 + 1
+            debug.setupvalue(AC.attack, 5, u8)
+            debug.setupvalue(AC.attack, 6, u9)
+            debug.setupvalue(AC.attack, 4, u7)
+            debug.setupvalue(AC.attack, 7, u10)
             pcall(function()
-                CmrFwLib.activeController.timeToNext_G.AttackNoCD = 1
-                CmrFwLib.activeController._G.AttackNoCDing = false
-                CmrFwLib.activeController.blocking = false
-                CmrFwLib.activeController.timeToNextBlock = 0
-                CmrFwLib.activeController.increment = 3
-                CmrFwLib.activeController.hitboxMagnitude = 120
-                CmrFwLib.activeController.focusStart = 0
-                game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("weaponChange",tostring(GetBladeHit()))
-                game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("hit", bladehit, i, "")
+                for k, v in pairs(AC.animator.anims.basic) do
+                    v:Play()
+                end
             end)
+            if plr.Character:FindFirstChildOfClass("Tool") and AC.blades and AC.blades[1] then 
+                game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("weaponChange",tostring(GetCurrentBlade()))
+                game.ReplicatedStorage.Remotes.Validator:FireServer(math.floor(u12 / 1099511627776 * 16777215), u10)
+                game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("hit", bladehit, i, "") 
+            end
         end
     end
 end
-spawn(function()
-    while wait(.1) do
-        if _G._G.AttackNoCDNoCD then
-            pcall(function()
-                repeat task.wait(_G._G.AttackNoCDNoCDDelay)
-                    _G.AttackNoCDHit()
-                until not _G._G.AttackNoCDNoCD
-            end)
-        end
-    end
-end)
+local cac
+if SuperFastMode then 
+    cac=task.wait
+else
+    cac=wait
+end
+while cac() do 
+    AttackNoCD()
+end
 
 spawn(function()
     pcall(function()
@@ -7752,7 +7782,7 @@ spawn(function()
                                end
                             topos(v.HumanoidRootPart.CFrame * Pos)
                             v.HumanoidRootPart.CanCollide = false
-                            Fast_G.AttackNoCD = true
+                            Fastattack = true
                             v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
                             game:GetService("VirtualUser"):CaptureController()
                                game:GetService("VirtualUser"):Button1Down(Vector2.new(1280, 672), game.Workspace.CurrentCamera.CFrame)
@@ -7760,7 +7790,7 @@ spawn(function()
                                PosMon = v.HumanoidRootPart.CFrame
                         until not _G.AutoFarmNearest or not v.Parent or v.Humanoid.Health <= 0 
                         AutoFarmNearestMagnet = false
-                        Fast_G.AttackNoCD = false
+                        Fastattack = false
                     end
                 end
             end
@@ -10442,7 +10472,7 @@ local TushitaPos = CFrame.new(-10238.875976563, 389.7912902832, -9549.7939453125
                                             repeat wait()
                                                 AutoHaki()
                                                 EquipWeapon(_G.SelectWeapon)
-                                                Fast_G.AttackNoCD = true
+                                                Fastattack = true
                                                 v.HumanoidRootPart.CanCollide = false
                                                 v.Humanoid.WalkSpeed = 0
                                                 v.HumanoidRootPart.Size = Vector3.new(50,50,50)
@@ -10450,7 +10480,7 @@ local TushitaPos = CFrame.new(-10238.875976563, 389.7912902832, -9549.7939453125
                                                 game:GetService("VirtualUser"):CaptureController()
                                                 game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                             until _G.Namfon == false or v.Humanoid.Health <= 0 or not v.Parent
-                                            Fast_G.AttackNoCD = false
+                                            Fastattack = false
                                         end
                                     end
                                 end
